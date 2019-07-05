@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+/* background */
+#SLIDE_BG {
+    margin: none;
+    position: absolute;
+    border: none;
+    padding: none;
+    outline: none;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: animate 25s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../img/1.jpg');
+    -webkit-animation: animate 16s linear infinite 0s;
+
+
+}
+#outer {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+
+}
+
+@keyframes animate {
+        0%, 100% { 
+            background-image: url('../img/1.jpg');
+        }
+        25% { 
+            background-image: url('../img/2.jpg');
+        }
+        50% { 
+            background-image: url('../img/3.jpg');
+        }
+        75% { 
+            background-image: url('../img/4.jpg');
+        }
+    
+    }
+
+    @-webkit-keyframes animate {
+        0%, 100% { 
+            background-image: url('../img/1.jpg');
+        }
+        25% { 
+            background-image: url('../img/2.jpg');
+        }
+        50% { 
+            background-image: url('../img/3.jpg');
+        }
+        75% { 
+            background-image: url('../img/4.jpg');
+        }
+    }
+
+    #details {
+        color: white;
+     
+    
+    }
+/*Header*/
+/* Global Styles */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    margin-top: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.55);
+    transition: padding 300ms ease;
+    
+}
+header img {
+    position: fixed;
+    left: 450px;
+
+    zoom: 130%;
+    
+}
+/* baguhin yung background-color ^ kung gusto magkabanner */
+
+header.sticky {
+    padding: 10px 20px;
+}
+    
+a.nav__link {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #631414;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 400px;
+   
+}
+a.nav__link2 {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #631414;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 525px;
+   
+}
+
+
+a.nav__link:last-child {
+    margin-right: 0;
+}
+a.nav__link2:last-child {
+    margin-right: 0;
+}
+section.content {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #ABA9BF;
+    color: #202020;
+}
+
+/* Booking Form Box */
+
+.booking-form-box {
+    max-width: 350px;
+    border: 1px solid white ;
+    margin: 10% auto 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.radio-btn {
+    margin: 0 20px; 
+}
+
+.radio-btn .btn {
+    margin: 20px 10px 20px 0;
+    box-shadow: none;
+
+}
+
+.radio-btn .btn::after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    top: -2px;
+    left:-1px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    border: 3px solid #ffffff;
+    visibility: visible;
+    border-radius: 50%;
+
+}
+
+.radio-btn .btn:checked::after {
+    content: '';
+    background-color: #631414;
+    transition: 0.5s;
+
+}
+
+.radio-btn span  {
+    color: white;
+    margin-right: 5px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    
+}   
+.booking-form-box {
+    position: absolute;
+    right: 180px;
+}
+.booking-form {
+    padding: 0 20px 20px;
+
+}
+
+.booking-form label {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+input::placeholder {
+    color:  white !important;
+
+}
+
+.input-grp {
+    width: 151px;
+    display: inline-block;
+
+}
+
+.form-control {
+    font-size: 12px !important ;
+    border-radius: 50px !important;
+    color: black !important;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+
+.select-date::-webkit-calendar-picker-indicator {
+    background: transparent !important;
+}
+
+.custom-select {
+    color: black !important;
+    font-size: 12px !important;
+    border: 1px solid #ced4da !important;
+    box-shadow: none !important;
+    border-radius: 50px !important;
+    background: white !important;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.custom-select option {
+    color: #333333;
+
+}
+
+.flight {
+    width: 100%;
+    padding: 9px 0;
+    font-size: 12px;
+    border: 1px solid #ee3d3d !important;
+    background: #631414 !important;
+    box-shadow: none !important;
+    border-radius: 50px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flight:hover {
+    background: #ee3d3d !important;
+    color:  #000000 !important;
+    transition: 0.15s;
+}
+
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    font-size: 50px;
+    top: 100px;
+    color: white;
+    left: 50px;
+    margin-top: none;
+    padding-top: 0px;
+
+}

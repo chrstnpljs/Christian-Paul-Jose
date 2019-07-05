@@ -1,0 +1,584 @@
+@charset "UTF-8";
+#SLIDE_BG {
+    margin: none;
+    position: absolute;
+    border: none;
+    padding: none;
+    outline: none;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: animate 25s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../css/420.jpg');
+    -webkit-animation: animate 16s linear infinite 0s;
+
+
+}
+#outer {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+} 
+/*Header*/
+/* Global Styles */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    margin-top: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.55);
+    transition: padding 300ms ease;
+    
+}
+header img {
+    position: fixed;
+    left: 450px;
+    top: 5px;
+    zoom: 130%;
+    
+}
+/* baguhin yung background-color ^ kung gusto magkabanner */
+
+header.sticky {
+    padding: 10px 20px;
+}
+    
+a.nav__link {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #631414;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 400px;
+   
+}
+a.nav__link2 {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #631414;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 525px;
+   
+}
+
+
+a.nav__link:last-child {
+    margin-right: 0;
+}
+a.nav__link2:last-child {
+    margin-right: 0;
+}
+section.content {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #ABA9BF;
+    color: #202020;
+}
+
+
+.Flight_details {
+
+        width: 450px;
+        border: 1px solid white ;
+        margin: 10% auto 0;
+        color: white;
+        position: absolute;
+        top: 45px;
+        left: 100px;
+        padding: 0 20px 20px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .Flight_details label {
+       margin-bottom: 0px;
+        margin-top: 20px;
+        font-size: 16px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        align-self: center;
+        left: 35px;
+        display: block;
+        text-align: center;
+      
+        
+    }
+    
+    .Flight_details-box {
+        position: absolute;
+        right: 180px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .Flight1 {
+
+        width: 220px;
+        border: 1px solid white ;
+        margin: 10% auto 0;
+        color: white;
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        padding: 0 20px 20px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .Flight1 label {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        align-self: center;
+        left: 35px;
+        display: block;
+        text-align: center;  
+    }
+    .Flight1 p {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-size: 12px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        align-self: center;
+        left: 35px;
+        display: block;
+        text-align: center; 
+        
+    }
+    
+    .Flight1-box {
+        position: absolute;
+        right: 180px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .Flight2 {
+
+        width: 220px;
+        border: 1px solid white ;
+        margin: 10% auto 0;
+        color: white;
+        position: absolute;
+        top: 120px;
+        left: 330px;
+        padding: 0 20px 20px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .Flight2 label {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        align-self: center;
+        left: 35px;
+        display: block;
+        text-align: center;  
+    }
+    .Flight2 p {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-size: 12px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        align-self: center;
+        left: 35px;
+        display: block;
+        text-align: center;  
+    }
+    
+    .Flight2-box {
+        position: absolute;
+        right: 180px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .Adult {
+
+        width: 220px;
+        border: 1px solid white ;
+        margin: 10% auto 0;
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 100px;
+        padding: 0 20px 20px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .Adult label {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 12px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        align-self: center;
+        left: 35px;
+        display: block;
+        text-align: center; 
+        border-radius: 50px; 
+    }
+
+    .Adult-box {
+        position: absolute;
+        right: 180px;
+        background: rgba(0, 0, 0, 0.5);
+        
+    }
+
+    .Flight_Class {
+
+        width: 220px;
+        border: 1px solid white ;
+        margin: 10% auto 0;
+        color: white;
+        position: absolute;
+        top: 270px;
+        left: 330px;
+        padding: 0 20px 20px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .Flight_Class label {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 12px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        align-self: center center;
+        left: 35px;
+        display: block;
+        text-align: center center;  
+    }
+
+    .Flight_Class-box {
+        position: absolute;
+        right: 180px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    button {
+        position: absolute;
+        top: 470px;
+        left: 220px;
+        border-radius: 50px;
+        color: #631414;
+
+    }
+    .flight {
+        width: 450px;
+        padding: 9px 0;
+        font-size: 12px;
+        border: 1px solid #ee3d3d !important;
+        background: #631414 !important;
+        box-shadow: none !important;
+        border-radius: 50px !important;
+        font-family: 'Montserrat', sans-serif;
+        top: 470px;
+        left: 100px;
+    }
+    
+    .flight:hover {
+        background: #ee3d3d !important;
+        color:  #000000 !important;
+        transition: 0.15s;
+    }
+
+    /* Force scrollbars onto browser window */
+.overflow-auto{
+        width: 590px;
+        height: 84vh;
+        border: 1px solid white ;
+        margin: 10% auto 0;
+        color: white;
+        position: absolute;
+        top: -45px;
+        left: 580px;
+        padding: 0 20px 20px;
+        border-radius: 10px; 
+        background: rgba(0, 0, 0, 0.5);
+
+    }
+    .overflow-auto label{
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .Flight_Class label {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 12px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        align-self: center center;
+        left: 35px;
+        display: block;
+        text-align: center center; 
+}
+.myBox {
+    width: 540px;
+    border: 1px solid white ;
+    margin: 10% auto 0;
+    color: rgb(58, 56, 56);
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.55);
+    height: 35vh;
+    top: -5px;
+    
+}
+.canada{
+    display: block;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    align-content: right;
+}
+.canada img {
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    
+}
+.india{
+    position: relative;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    top: -70px;
+    left: 190px;
+    
+}
+.canadab{
+    position: relative;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    top: -140px;
+
+}
+.canadab img {
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    
+}
+.indiab {
+    position: relative;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    top: -70px;
+    left: 190px;
+    
+}
+.price1 {
+    position: relative;
+    top: -230px;
+    left: 440px;
+}
+/* option 2 */
+.myBox2 {
+    width: 540px;
+    border: 1px solid white ;
+    margin: 10% auto 0;
+    color: rgb(58, 56, 56);
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.55);
+    height: 35vh;
+    top: 200px;
+    left: 0px;
+}
+.canada1{
+    display: block;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    align-content: right;
+}
+.canada1 img {
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    
+}
+.india1{
+    position: relative;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    top: -70px;
+    left: 190px;
+    
+}
+.canadab2{
+    position: relative;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    top: -140px;
+
+}
+.canadab2 img {
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    
+}
+.indiab2 {
+    position: relative;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    top: -70px;
+    left: 190px;
+    
+}
+.price2 {
+    position: relative;
+    top: -230px;
+    left: 440px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #631414 !important;
+    border-radius: 5px;
+    border: #ee3d3d !important;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:  #ee3d3d !important;
+    border-radius: 5px;
+  }
+
+  /* modal */
+  .login-form {
+    width: 340px;
+    margin: 30px auto;
+    height: 80vh;
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+  
+}
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.login-form .hint-text {
+    color: #777;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.login-btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
+.or-seperator {
+    margin: 20px 0 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+.or-seperator i {
+    padding: 0 10px;
+    background: #f7f7f7;
+    position: relative;
+    top: -11px;
+    z-index: 1;
+}
+.social-btn .btn {
+    margin: 10px 0;
+    font-size: 15px;
+    text-align: left; 
+    line-height: 24px;       
+}
+.social-btn .btn i {
+    float: left;
+    margin: 4px 15px  0 5px;
+    min-width: 15px;
+}
+.input-group-addon .fa{
+    font-size: 18px;
+}
+
+.form-group .btn {
+    position: absolute;
+    left: 120px;
+    top: 510px;
+    background: #631414;
+    border: 1px solid #ee3d3d;
+    width: 250px;
+    border-radius: 50px;
+    
+}
+
+.form-group .btn:hover {
+    background: #ee3d3d !important;
+    color:  #000000 !important;
+    transition: 0.15s;
+}
+
